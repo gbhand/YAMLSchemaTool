@@ -1,0 +1,22 @@
+{
+  "name": "yamlschematool",
+  "version": "0.1.0",
+  "description": "A tool for updating GitHub Actions YAML Schemas with an organization's runner labels.",
+  "main": "app.mjs",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbhand/YAMLSchemaTool.git"
+  },
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "fs-extra": "^10.0.0",
+    "node-fetch": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
