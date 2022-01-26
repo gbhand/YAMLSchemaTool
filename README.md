@@ -12,18 +12,18 @@ node >= 12.22
 ## Installation ##
 
 Clone the repository
-```
+```bash
 git clone https://github.com/gbhand/YAMLSchemaTool.git
 cd YAMLSchemaTool
 ```
 
 Install module
-```
+```bash
 npm install
 ```
 
 Configure environment
-```
+```bash
 echo "GH_PAT=" > .env
 echo "ORG=" >> .env
 echo "SCHEMA_URL=" >> .env
@@ -38,9 +38,17 @@ These values should be filled in as follows:
 | `SCHEMA_URL` | Path to base schema to be modified. [Example](https://json.schemastore.org/github-workflow.json)                                                                                                                                                                                                                                   | Required |
 | `OUTPUT_PATH`| Local path to output file. Defaults to `outputs/{basename}`                                                                                                                                                                                                                                                                        | Optional |
 
+Integrate with [YAML Language Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) (VSCode)
+```jsonc
+// add this to your settings.json (globs are supported)
+"yaml.schemas": {
+    "file://PATH_TO_JSON_OUTPUT": "file://PATH_TO_WORKFLOW"
+}
+```
+
 ## Usage ##
 
-```
+```bash
 node app.mjs
 ```
 
